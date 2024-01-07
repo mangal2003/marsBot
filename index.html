@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarsBOT | GPT-5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="https://rapidapi.com/TechNex/api/chatgpt-gpt5" target="_blank"><i class="ri-hand-heart-line"
+                id="menuOpen"></i></a>
+        MarsBOT
+        <i class="ri-edit-2-fill" onclick="newQuery()"></i>
+    </div>
+    <div id="mainContainer">
+        <div id="logo">
+            <img src="chatbot.jpg" alt="chatgpticon" id="chatgpticon">
+            <h3 id="helpYou">How can I help you today?</h3>
+        </div>
+        <div id="setUpQuery">
+            <div id="query1" class="queries">
+                <span style="color: #fff;">Come up with concepts</span> <br>
+                for a retro-style arcade game
+                <i class="ri-arrow-up-line" onclick="queryResponse1()"></i>
+
+            </div>
+            <div id="query2" class="queries">
+                <span style="color: #fff;"> Write a thank-you note</span> <br>
+                to my interviewer
+                <i class="ri-arrow-up-line" onclick="queryResponse2()"></i>
+
+            </div>
+            <div id="query3" class="queries">
+                <span style="color: #fff;">Compare marketing strategies</span> <br>
+                for sunglasses for Gen Z and Millennials
+                <i class="ri-arrow-up-line" onclick="queryResponse3()"></i>
+
+            </div>
+            <div id="query4" class="queries">
+                <span style="color: #fff;">Help me pick</span> <br>
+                a birthday gift for my mom who likes gardening
+                <i class="ri-arrow-up-line" onclick="queryResponse4()"></i>
+
+            </div>
+        </div>
+        <div id="queryBox">
+            <input type="text" spellcheck="true" name="queryUser" id="queryUser" placeholder="Message MarsBOT...">
+            <i class="ri-arrow-up-line" onclick="queryResponse()"></i>
+        </div>
+        <div id="queryResponse">
+            <i class="ri-close-circle-fill" id="cancleResponse" onclick="newQuery()"></i>
+            <div id="user">
+                <div id="title">
+                    <i class="ri-account-circle-fill"></i>
+                    <h4>&nbsp;&nbsp; You</h4>
+                </div>
+                <div id="queryEntered">
+                    Query
+                </div>
+            </div>
+            <div id="gpt">
+                <div id="title">
+                    <i class="ri-robot-2-fill"></i>
+                    <h4>&nbsp;&nbsp; MarsBOT</h4>
+                </div>
+                <div id="responseGPT">
+                    <div id="animationLoading">
+                        <div id="circle1" class="circle"></div>
+                        <div id="circle2" class="circle"></div>
+                        <div id="circle3" class="circle"></div>
+                        <div id="circle4" class="circle"></div>
+                        <div id="circle5" class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>MarsBOT can make mistakes. Consider checking important information.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
